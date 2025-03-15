@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results - Human Design</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .container { display: flex; gap: 30px; }
+        .description { flex: 1; }
+    </style>
+</head>
+<body>
+    <h1>Your Bodygraph</h1>
+    <div class="container">
+        <div class="chart">
+            {{.SVG}}
+        </div>
+        <div class="description">
+            <h2>Interpretation</h2>
+            <p>{{.Description}}</p>
+        </div>
+    </div>
+</body>
+</html>
